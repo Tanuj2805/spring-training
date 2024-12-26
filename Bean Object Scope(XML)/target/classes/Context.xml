@@ -5,10 +5,10 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="Alien" class="org.example.Alien" scope="prototype">
-
     </bean>
 
-        <bean id="laptop" class="org.example.Laptop">
+    <bean id="laptop" class="org.example.Laptop">
+    </bean>
 
-        </bean>
+
 </beans>

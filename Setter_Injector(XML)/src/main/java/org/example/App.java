@@ -16,7 +16,10 @@ public class App
 
 
         ApplicationContext con = new ClassPathXmlApplicationContext("Context.xml");
-        Coder a = (Coder) con.getBean("code");//Type Casting because it returns generic object
+
+
+        //ITS FOR PRIMITIVE DATA TYPE
+        Coder a = (Coder) con.getBean("code1");//Type Casting because it returns generic object
 
         System.out.println("Default Value of Language Variable : "+a.getLanguage());
 
@@ -24,5 +27,9 @@ public class App
 
         System.out.println("Changed Value of Language Variable : "+a.getLanguage());
 
+
+        //REF PROPERTY OF SYSTEM
+
+        a.code();
     }
 }

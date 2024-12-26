@@ -4,12 +4,18 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id = "code" class = "org.example.Coder">
-        <property name="language" value="Java">
 
-        </property>
-
+    <bean id = "code1" class = "org.example.Coder">
+        <property name="language" value="Java"> </property>
+        <property name="sys" ref="system1"></property>
     </bean>
+
+    <bean id = "system1" class="org.example.system">
+    </bean>
+
+
+
+
 
 
 
