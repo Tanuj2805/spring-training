@@ -13,6 +13,8 @@ public class App
 
     public static void main( String[] args )
     {
+
+
         ApplicationContext con = new ClassPathXmlApplicationContext("Context.xml");
         Coder a = (Coder) con.getBean("code");//Type Casting because it returns generic object
 
