@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="patient" class="org.example.Patient">
+        <constructor-arg value="21"/>
+        <constructor-arg value="Rahul"/>
+        <constructor-arg value="1000"/>
+
+
+
+    </bean>
+
+    <bean id="disease" class="org.example.Disease">
+
+        <constructor-arg type="String" value="Fracture"/>
+        <constructor-arg type="org.example.Patient" ref="patient"/>
+        <constructor-arg type="String" value="Roy"/>
+
+
+
+    </bean>
+
+    <bean id="car" class="org.example.Car">
+        <constructor-arg index = "1" value="S3"/>
+        <constructor-arg index = "0" value="Mercedez"/>
+
+
+
+
+    </bean>
+
+    <bean id="city" class="org.example.City">
+        <constructor-arg name="p" value="100000"/>
+        <constructor-arg name="n" value="pune"/>
+
+    </bean>
+
+
+
+
+
+
+</beans>
