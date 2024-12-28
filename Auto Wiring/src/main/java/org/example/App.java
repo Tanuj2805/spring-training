@@ -14,6 +14,8 @@ public class App
       ApplicationContext con = new ClassPathXmlApplicationContext("Context.xml");
       coder dev = (coder) con.getBean("code");
 
+
+        dev.coding();
       dev.com();
 
     }

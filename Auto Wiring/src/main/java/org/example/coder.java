@@ -12,6 +12,11 @@ public class coder {
         return lap;
     }
 
+    public void coding()
+    {
+        System.out.println("Coder is Coding ");
+    }
+
     public void com()
     {
         lap.compile();
