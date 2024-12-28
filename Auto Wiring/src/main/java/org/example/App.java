@@ -15,7 +15,7 @@ public class App
       coder dev = (coder) con.getBean("code");
 
 
-        dev.coding();
+      dev.coding();
       dev.com();
 
     }
