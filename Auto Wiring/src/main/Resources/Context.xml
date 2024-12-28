@@ -13,7 +13,4 @@
     <bean id="code" class="org.example.coder" autowire="byType">
     </bean>
 
-
-
-
 </beans>

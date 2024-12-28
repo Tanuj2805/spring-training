@@ -22,7 +22,4 @@ public class coder {
         lap.compile();
     }
 
-
-
-
 }
