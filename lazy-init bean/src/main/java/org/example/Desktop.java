@@ -19,7 +19,7 @@ public class Desktop implements Machine
     @Override
     public void compile()
     {
-        System.out.println("Desktop Object Is Created");
+        System.out.println("Compiling Using Desktop");
     }
 
 

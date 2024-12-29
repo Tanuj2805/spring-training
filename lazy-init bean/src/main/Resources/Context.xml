@@ -4,13 +4,19 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="Desktop" class="org.example.Desktop" primary="true" >
+
+
+
+<!--    Here i have used autowire by type but both class laptop and desktop implement same type of class that is machine and we also want machine so i creayte confusiopn to solve this we make one primary so to use that-->
+    <bean id="code" class="org.example.Coder" autowire="byType">
     </bean>
 
-    <bean id="lap" class="org.example.laptop">
+    <bean id="Desktop" class="org.example.Desktop"  lazy-init="true" >
     </bean>
 
-    <bean id="code" class="org.example.coder" autowire="byType">
+    <bean id="lap" class="org.example.Laptop" primary="true" lazy-init="true">
     </bean>
+
+
 
 </beans>
