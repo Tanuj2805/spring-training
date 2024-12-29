@@ -13,7 +13,12 @@ public class App
     {
         ApplicationContext con = new ClassPathXmlApplicationContext("Context.xml");
 
+
         Coder a = (Coder) con.getBean("code");
+        //Here Coder class is depend on one class and we are passing laptop object using constructor
+        // As the both the class is declared lazy init so only when it is neede at that time only it will create the object
+        //Here desktop is not needed so it doesnt creat it
+        //To more understand compare with Autowire file
         a.coding();
 
 
