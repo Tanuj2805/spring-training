@@ -10,5 +10,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App 
 {
 
-    ApplicationContext con = new ClassPathXmlApplicationContext("Context.xml");
+    public static void main(String[] args) {
+
+        ApplicationContext con = new ClassPathXmlApplicationContext("Context.xml");
+        Coder a = con.getBean(Coder.class);
+        a.code();
+    }
+
+
+
 }
