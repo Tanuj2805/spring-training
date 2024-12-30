@@ -9,16 +9,13 @@
 
     <!--    Here i have used autowire by type but both class laptop and desktop implement same type of class that is machine and we also want machine so i creayte confusiopn to solve this we make one primary so to use that-->
     <bean id="code" class="org.example.Coder" autowire="byType">
+        <property name="system">
+            <bean id="lappy" class="org.example.Laptop" >
+            </bean>
+        </property>
     </bean>
 
-    <bean id="Desktop" class="org.example.Desktop"  lazy-init="true" >
-    </bean>
 
-    <bean id="Desktop2" class="org.example.Desktop"  lazy-init="true" >
-    </bean>
-
-    <bean id="lap" class="org.example.Laptop" primary="true" lazy-init="true">
-    </bean>
 
 
 
