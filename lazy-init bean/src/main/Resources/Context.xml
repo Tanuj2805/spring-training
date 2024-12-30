@@ -14,6 +14,9 @@
     <bean id="Desktop" class="org.example.Desktop"  lazy-init="true" >
     </bean>
 
+    <bean id="Desktop2" class="org.example.Desktop"  lazy-init="true" >
+    </bean>
+
     <bean id="lap" class="org.example.Laptop" primary="true" lazy-init="true">
     </bean>
 

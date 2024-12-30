@@ -23,5 +23,19 @@ public class App
 
 
 
+        //Here i am created Desktop Object so due to initlazy bean i will not create at start only when i will create in program
+        //Instead of type casting i am passing direct class instead of name
+
+
+        //Desktop b = con.getBean(Desktop.class);
+
+
+        //Another Way if we have multiple desktop bean in xml file
+
+        Desktop c = con.getBean("Desktop2",Desktop.class);
+
+
+
+
     }
 }
