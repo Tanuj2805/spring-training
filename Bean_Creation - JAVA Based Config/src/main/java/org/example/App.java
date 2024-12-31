@@ -15,7 +15,7 @@ public class App
     {
         ApplicationContext con = new AnnotationConfigApplicationContext(Context.class);
 
-        Student st1 = con.getBean(Student.class);
+        Student st1 = con.getBean(Student.class);//Used Class for Bean Creation
 
         st1.setName("Tanuj");
         st1.setRn(11);
