@@ -10,8 +10,6 @@ public class School {
         System.out.println("School Object Is Created");
     }
 
-
-
     public String getName() {
         return Name;
     }
