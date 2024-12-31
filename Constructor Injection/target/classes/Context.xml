@@ -5,34 +5,29 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+<!--    Here Sequence Is Considered while assigning value-->
     <bean id="patient" class="org.example.Patient">
         <constructor-arg value="21"/>
         <constructor-arg value="Rahul"/>
         <constructor-arg value="1000"/>
 
-
-
     </bean>
 
+<!--    Here Data Type Is Considered while assigning value -->
     <bean id="disease" class="org.example.Disease">
 
         <constructor-arg type="String" value="Fracture"/>
         <constructor-arg type="org.example.Patient" ref="patient"/>
         <constructor-arg type="String" value="Roy"/>
-
-
-
     </bean>
 
+    <!--    Here Index Is Considered while assigning value -->
     <bean id="car" class="org.example.Car">
         <constructor-arg index = "1" value="S3"/>
         <constructor-arg index = "0" value="Mercedez"/>
-
-
-
-
     </bean>
 
+    <!--    Here Name but required to add annotation in class constructor Is Considered while assigning value -->
     <bean id="city" class="org.example.City">
         <constructor-arg name="p" value="100000"/>
         <constructor-arg name="n" value="pune"/>

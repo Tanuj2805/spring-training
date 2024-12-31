@@ -6,9 +6,6 @@ public class Patient {
     private String name;
     private int bill;
 
-
-
-
     public Patient(int age, String name, int bill) {
         this.age = age;
         this.name = name;
