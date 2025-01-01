@@ -6,6 +6,7 @@ import org.example.Education;
 import org.example.School;
 import org.example.Student;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -14,7 +15,7 @@ import org.springframework.context.annotation.Primary;
 public class Context {
 
     @Bean
-    public Student stu(@Autowired Education ed)
+    public Student stu(@Qualifier("cl") Education ed)//@Autowired Is Optional And if you dont want to use primary you can add @Qualifier Annotation here "public Student stu( @Qualifier("cl") Education ed)"
     {
         Student st = new Student();
         st.setName("Tanuj");  //Default Name
@@ -25,13 +26,13 @@ public class Context {
     }
 
     @Bean
-
     public College cl()
     {
         return new College();
     }
 
     @Bean
+   // @Primary
     public School sc()
     {
         return new School();
