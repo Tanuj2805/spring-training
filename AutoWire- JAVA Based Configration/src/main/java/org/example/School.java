@@ -5,6 +5,8 @@ public class School implements Education{
     String name;
 
     public School() {
+
+        System.out.println("School Object Created");
     }
 
     public String getName() {
@@ -17,6 +19,6 @@ public class School implements Education{
 
     @Override
     public void learn() {
-
+        System.out.println("Learning In School");
     }
 }
