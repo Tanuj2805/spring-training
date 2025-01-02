@@ -1,6 +1,7 @@
 package org.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -10,6 +11,7 @@ public class Student {
     int rn;
 
     @Autowired
+    @Qualifier("clg")
     Education ed;
 
     public Student() {
@@ -43,8 +45,9 @@ public class Student {
 
     public void getdata()
     {
-        System.out.println("NAME: "+name);
+        System.out.println("Student NAME: "+name);
         System.out.println("Roll No: "+rn);
+        ed.learn();
     }
 
 
