@@ -9,6 +9,7 @@
 
 <!--    Here i have used autowire by type but both class laptop and desktop implement same type of class that is machine and we also want machine so i creayte confusiopn to solve this we make one primary so to use that-->
     <bean id="code" class="org.example.Coder" autowire="byType">
+
     </bean>
 
     <bean id="Desktop" class="org.example.Desktop"  lazy-init="true" >
