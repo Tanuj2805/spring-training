@@ -16,8 +16,8 @@ public class AppApplication {
 		sc.getinfo();
 		System.out.println("**************************************************************************");
 		sc.setIntake(1000);
-		sc.setName("VIT");
-		sc.setCity("PUNE");
+		sc.setName("NEMS");
+		sc.setCity("Yavatmal");
 		sc.getinfo();
 		System.out.println("**************************************************************************");
 
@@ -34,9 +34,30 @@ public class AppApplication {
 
 		// Fetch Student bean and display its data
 		Student student = context.getBean(Student.class);
-		student.getdata();
+		student.setName("Tanuj");
+
+		if(student.getRollno() == 0)
+			System.out.println("Enter Roll Number First");
+		else {
+			student.getdata();
+			return;
+		}
+		student.setRollno(35);
+
+
+		System.out.println("**************************************************************************");
+		if(student.getRollno() == 0)
+			System.out.println("Enter Roll Number First");
+		else {
+			student.getdata();
+
+				return;
+			}
+		}
+
+
 
 
 
 	}
-}
+

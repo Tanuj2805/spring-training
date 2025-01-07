@@ -11,10 +11,13 @@ public class School implements Education {
 
 
 
+   @Value("${School.name}")
     String name;
+
+   @Value("${School.City}")
     String City;
 
-    @Value("${School.intake}")
+   @Value("${School.intake}")
     int intake;
 
     public String getName() {

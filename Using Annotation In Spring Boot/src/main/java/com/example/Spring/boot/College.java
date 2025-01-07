@@ -9,7 +9,11 @@ public class College implements Education{
 
 
 
+    @Value("${College.name}")
+
     String name;
+
+    @Value("${College.City}")
     String City;
 
     @Value("${College.intake}")

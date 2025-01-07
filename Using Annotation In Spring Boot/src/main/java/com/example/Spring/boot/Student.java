@@ -10,12 +10,13 @@ import org.springframework.stereotype.Component;
 public class Student {
 
 
+    @Value("${Student.rollno}")
     private int rollno;
 
     @Value("${Student.name}")
     private String name;
 
-    @Value("pune")
+    @Value("${Student.City}")
     private String Address;
 
     Education ed;
