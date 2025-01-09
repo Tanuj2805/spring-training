@@ -69,4 +69,12 @@ public class EmployeeService {
 
         emprepo.update(id,name,sal,pos);
     }
+
+    public void deleteEmployee()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Id: ");
+        int id = sc.nextInt();
+        emprepo.delete(id);
+    }
 }

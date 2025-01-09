@@ -30,7 +30,7 @@ public class EmployeeRepo {
 
     public void save(Employee emp) {
         String sql = "insert into employee values(?,?,?,?);";
-        System.out.println(sql);
+
         jdbc.update(sql, emp.getName(), emp.getEmp_id(), emp.getSal(), emp.getPosition());
 
 
@@ -62,6 +62,15 @@ public class EmployeeRepo {
     {
         String sql = "Update employee set name = ?, sal = ?, pos = ? where eid = ?";
         jdbc.update(sql,name,Sal,pos,id);
+        System.out.println("Updated Successfully");
 
+
+    }
+
+    public void delete(int id)
+    {
+        String sql = "delete from employee where eid = ?";
+        jdbc.update(sql,id);
+        System.out.println("Deleted Successfully");
     }
 }

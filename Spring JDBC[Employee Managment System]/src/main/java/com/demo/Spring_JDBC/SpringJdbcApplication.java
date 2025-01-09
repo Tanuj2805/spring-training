@@ -45,7 +45,7 @@ public class SpringJdbcApplication {
 					}
 				}
 				case 3 -> empserve.empupdate();
-				//case 4 -> employeeService.deleteEmployee(scanner);
+				case 4 -> empserve.deleteEmployee();
 				case 5 -> {
 					System.out.println("Exiting...");
 					sc.close();
