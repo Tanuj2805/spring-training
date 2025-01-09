@@ -44,7 +44,7 @@ public class SpringJdbcApplication {
 								", Salary: " + emp.getSal() + ", Position: " + emp.getPosition());
 					}
 				}
-				//case 3 -> employeeService.updateEmployee(scanner);
+				case 3 -> empserve.empupdate();
 				//case 4 -> employeeService.deleteEmployee(scanner);
 				case 5 -> {
 					System.out.println("Exiting...");

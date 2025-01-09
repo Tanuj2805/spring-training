@@ -56,4 +56,12 @@ public class EmployeeRepo {
 
         return jdbc.query("select * from employee", rowMapper);
     }
+
+
+    public void update(int id,String name,int Sal, String pos)
+    {
+        String sql = "Update employee set name = ?, sal = ?, pos = ? where eid = ?";
+        jdbc.update(sql,name,Sal,pos,id);
+
+    }
 }

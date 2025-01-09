@@ -16,16 +16,10 @@ public class EmployeeService {
     @Autowired
     Employee emp;
 
-
+    @Autowired
     EmployeeRepo emprepo;
 
-    public EmployeeRepo getEmprepo() {
-        return emprepo;
-    }
-    @Autowired
-    public void setEmprepo(EmployeeRepo emprepo) {
-        this.emprepo = emprepo;
-    }
+
 
     public void addemployee()
     {
@@ -54,5 +48,25 @@ public class EmployeeService {
     public List<Employee> viewAllEmployee()
     {
         return emprepo.viewAllEmployee();
+    }
+
+    public void empupdate()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Id:(ID must be same other data can be changed) ");
+        int id = sc.nextInt();
+
+        sc.nextLine();
+        System.out.println("Enter Name: ");
+        String name = sc.nextLine();
+
+        System.out.println("Enter Salary: ");
+        int sal = sc.nextInt();
+
+        sc.nextLine();
+        System.out.println("Enter Position: ");
+        String pos = sc.nextLine();
+
+        emprepo.update(id,name,sal,pos);
     }
 }
