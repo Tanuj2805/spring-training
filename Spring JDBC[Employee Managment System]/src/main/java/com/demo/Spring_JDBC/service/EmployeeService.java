@@ -27,11 +27,16 @@ public class EmployeeService {
         System.out.println("Enter Employee Name: ");
         emp.setName(scanner.nextLine());
 
+        System.out.println("Enter Employee Id: ");
+        emp.setEmp_id(scanner.nextInt());
+
+        scanner.nextLine();
+
         System.out.println("Enter Employee Position: ");
         emp.setPosition(scanner.nextLine());
 
         System.out.println("Enter Employee Salary: ");
-        emp.setSal(scanner.nextDouble());
+        emp.setSal(scanner.nextInt());
 
         emprepo.save(emp);
 

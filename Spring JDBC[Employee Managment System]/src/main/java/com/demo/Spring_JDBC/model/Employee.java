@@ -1,13 +1,15 @@
 package com.demo.Spring_JDBC.model;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("prototype")
 public class Employee {
 
     String name;
     int emp_id;
-    double sal;
+    int sal;
     String Position;
 
     public String getName() {
@@ -27,11 +29,11 @@ public class Employee {
         this.emp_id = emp_id;
     }
 
-    public double getSal() {
+    public int getSal() {
         return sal;
     }
 
-    public void setSal(double sal) {
+    public void setSal(int sal) {
         this.sal = sal;
     }
 
