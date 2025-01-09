@@ -39,7 +39,10 @@ public class SpringJdbcApplication {
 				}
 				case 2 -> {
 					List<Employee> employees = empserve.viewAllEmployee();
-
+					for (Employee emp : employees) {
+						System.out.println("Name: " + emp.getName() + ", ID: " + emp.getEmp_id() +
+								", Salary: " + emp.getSal() + ", Position: " + emp.getPosition());
+					}
 				}
 				//case 3 -> employeeService.updateEmployee(scanner);
 				//case 4 -> employeeService.deleteEmployee(scanner);

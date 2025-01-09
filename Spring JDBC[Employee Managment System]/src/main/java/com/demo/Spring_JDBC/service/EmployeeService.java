@@ -16,9 +16,16 @@ public class EmployeeService {
     @Autowired
     Employee emp;
 
-    @Autowired
+
     EmployeeRepo emprepo;
 
+    public EmployeeRepo getEmprepo() {
+        return emprepo;
+    }
+    @Autowired
+    public void setEmprepo(EmployeeRepo emprepo) {
+        this.emprepo = emprepo;
+    }
 
     public void addemployee()
     {
