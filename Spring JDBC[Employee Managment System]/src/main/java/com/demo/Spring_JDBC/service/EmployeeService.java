@@ -76,5 +76,6 @@ public class EmployeeService {
         System.out.println("Enter Id: ");
         int id = sc.nextInt();
         emprepo.delete(id);
+
     }
 }
